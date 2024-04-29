@@ -1,0 +1,90 @@
+{
+	"info": {
+		"_postman_id": "58792b21-11f3-4f29-8ac9-c8aa5ea212d6",
+		"name": "Registration",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18969698",
+		"_collection_link": "https://winter-flare-787493.postman.co/workspace/Andrew's-workspace~5b533e49-8255-4833-bc7c-ed75a1e68be1/collection/18969698-58792b21-11f3-4f29-8ac9-c8aa5ea212d6?action=share&source=collection_link&creator=18969698"
+	},
+	"item": [
+		{
+			"name": "/register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"gender\": 1,\r\n    \"firstName\": \"test\",\r\n    \"lastName\": \"user\",\r\n    \"address\": \"test user address\",\r\n    \"city\": \"TEST CITY\",\r\n    \"countryCode\": \"GE\",\r\n    \"loginName\": \"deusexmachina\",\r\n    \"email\": \"test@croco.ge\",\r\n    \"dateOfBirth\": \"1990-01-01\",\r\n    \"password\": \"Paroli1\",\r\n    \"phoneNumber\": \"995:592240931\",\r\n    \"documentId\": \"string\",\r\n    \"verificationCode\": \"069157\",\r\n    \"freeBetSpinChoice\": \"3\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/register",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/preregister",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"mobile\": \"995:595763935\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/preregister",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"preregister"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "url",
+			"value": "",
+			"type": "string"
+		}
+	]
+}
